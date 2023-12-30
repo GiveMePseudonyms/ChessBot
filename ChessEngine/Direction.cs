@@ -31,5 +31,10 @@
             return new Direction(a.RowDelta * a.RowDelta, a.ColumnDelta * a.ColumnDelta);
         }
 
+        public static Direction operator *(int a, Direction b)
+        {
+            return new Direction(b.RowDelta * b.RowDelta, b.ColumnDelta * b.ColumnDelta);
+        }
+
     }
 }
